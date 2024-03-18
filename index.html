@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Rushikesh Koli</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Porfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Rushikesh Koli</h1>
+            <h3>And I'm a <span>Computer Science Engineer</span></h3>
+            <p>I'm currently pursuing my Bachelor's from ISB&M College of Engineering,Pune<br> Looking forward to work in a organization where I can utilize my skills for organization growth.</p>
+
+            <div class="social-media">
+                
+                <a href="https://www.instagram.com/rushiikoli_/?igsh=MmVlMjlkMTBhMg%3D%3D&utm_source=qr" target="_blank">
+                    <i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/rushikesh-koli/" target="_blank">
+                    <i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/rushikesh-koli-11" target="_blank">
+                    <i class='bx bxl-github'></i></a>
+                        
+            </div>
+            <a href="./image/Rushikesh koli IBM.pdf" download class="btn"> Download Resume
+                <i class ="pdfdownload"></i>
+            </a> 
+        </div>
+
+        <div class="home-img">
+            <img src="image/rk.jpeg" class="profile-image" alt="">
+        </div>
+    </section>
+
+    <!-- about section -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image/rk.jpeg"alt="">
+        </div>
+
+        <div class="abount-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3 class="about-soft"> Software Developer</h3>
+            <p class="about-paragraph"> I am an Honest and Quick Learner Person and Very Passionate About My Work.
+                 currently l'm learning Everything 💻.
+                 I know the programming languages like C++, Java and knowledge about Web development.
+                 My Strengths are I'm active learner, Time manager and consistent
+                 and My hobbies are Playing Chess, Solving Puzzles and Photography.
+                 l'm always looking for opportunities</p>
+
+        </div>
+    </section>
+
+
+
+    <!-- project section -->
+
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2><br><br>
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="image/android.jpg" alt="">
+                <div class="projects-layer">
+                    <h1 class="farshop-headling">airHomes  </h1><br>
+                    <p>
+                        airHomes website facilitates short-term lodging, primarily homestays, or tourism experiences. 
+                        </p>
+                    <a href="" target="_blank">
+                        <i class ='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+
+            <div class="projects-box">
+                <img src="image/android.jpg" alt="">
+                <div class="projects-layer">
+                    <h1 class="healthcare-headling">EyeOfAI</h1><br>
+                    <p>The purpose of an Eye of AI website is to generate images according to our description using artificial intelligence. 
+                        </p>
+                    <a href="" target="_blank">
+                        <i class ='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+
+            <div class="projects-box">
+                <img src="image/android.jpg" alt="">
+                <div class="projects-layer">
+                    <h1 class="food-headling">EmoChat</h1><br>
+                    <p>
+                        The purpose of a live chat website is to provide real-time communication between users.</p>
+                    <a href="" target="_blank">
+                        <i class ='bx bx-link-external'></i></a>
+                </div>
+
+            </div>
+           
+
+
+        </div>
+    </section>
+
+
+
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me </span></h2>
+        <form action="https://formsubmit.co/34b0edc07d4c9e24a4ba36280789cf1e" method="POST">
+            <div class="input-box">
+                <input type="text"name="Name" id="name" placeholder="Full Name " required>
+                <input type="email" name="Email" id="Email" placeholder="Email Address "required>
+            </div>
+
+            <div class="input-box">
+                <input type="number" name="Mobile number" id="number" placeholder="Mobile number "required>
+                <input type="text" name="Email Subject" id="subject" placeholder="Email Subject "required>
+            </div>
+
+            <textarea  cols="30" rows="10"id="Your message" name="Your message" placeholder="Your message" required></textarea>
+            <!-- <input type="submit" value="Send message" class="btn"> -->
+            <button type="submit">Sent message</button>
+        </form>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+
+    <!-- <script>
+        function sendEmail(){
+            Email.sent({
+                Host:"smtp.gmail.com",
+                Username:"teamunitcoder@gmail.com",
+                Passward:"Unit@121",
+                To:"rushikeshkoli87400@gmail.com",
+                From:document.getElementById("Email").value,
+                subject:"for contact purpose",
+                Body:"Name : "+document.getElementById("Full Name").value
+                     +"<br> Email: "+document.getElementById("Email Address").value
+                     +"<br> Phone no: "+document.getElementById("Mobile number").value
+                     +"<br> Subject: "+document.getElementById("Email Subject").value
+                     +"<br> Message: "+document.getElementById("Your message").value
+            }).then(
+                message =>alert("your message is sent successfully")
+
+            );
+        }
+    </script>
+ -->
+
+
+
+    <script src="script.js"></script>
+
+
+
+
+    
+</body>
+</html>
